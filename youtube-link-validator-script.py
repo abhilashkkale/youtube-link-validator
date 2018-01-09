@@ -74,7 +74,7 @@ def youtube_link_validator():
     return link_status_dict
 
 
-''' This function writes the final dictionary of youtube links & its status in a destiantion csv i.e youtube-link-status.csv file '''
+''' This  function writes the final dictionary of youtube links & its status in a destiantion csv i.e youtube-link-status.csv file '''
 def write_link_status():
     try:
         file_object = open(constants.DESTINATION_FILE, "w")
@@ -83,7 +83,7 @@ def write_link_status():
             file_object.write(str(key) + '\t' + str(value) + '\n')
         print("Validation completed. Check contents in youtube-link-status.csv")
     except IOError:
-        print("Error while writing to file.")
+        print(" Error while writing to file.")
 
 
 if __name__ == "__main__":
